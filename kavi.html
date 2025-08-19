@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Fraud Detection</title>
+    <link rel="stylesheet" href="kavi.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Credit Card Fraud Detection</h2>
+        <form id="cardForm">
+            <label for="bankName">Bank Name</label>
+            <select id="bankName" required>
+                <option value="" disabled selected>Select your bank</option>
+                <option value="Chase">Chase</option>
+                <option value="Wells Fargo">Wells Fargo</option>
+                <option value="Bank of America">Bank of America</option>
+                <option value="CitiBank">CitiBank</option>
+                <option value="HSBC">HSBC</option>
+            </select>
+
+            <label for="cardHolderName">Card Holder Name</label>
+            <input type="text" id="cardHolderName" placeholder="John Doe" required>
+
+            <label for="cardNumber">Credit Card Number</label>
+            <input type="text" id="cardNumber" maxlength="16" placeholder="1234 5678 9012 3456" required>
+
+            <label for="expiryDate">Expiry Date (MM/YY)</label>
+            <input type="text" id="expiryDate" maxlength="5" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" maxlength="3" placeholder="123" required>
+
+            <label for="amount">Transaction Amount</label>
+            <input type="number" id="amount" placeholder="Enter amount" required>
+
+            <div class="buttons">
+                <button type="submit" class="submit-button">Submit</button>
+                <button type="reset" class="reset-button">Reset</button>
+            </div>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script src="kavi.js"></script>
+</body>
+</html>
+
+
